@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -98,6 +98,17 @@ namespace LoadMedicalData
                 Cursor = Cursors.Arrow;
             }
 
+        }
+
+        private void bhtnPrex_Click(object sender, EventArgs e)
+        {
+            var files = selectFiles(@"C:\Users\Cesar\Documents\Finanzas\Cesar");
+            if (files != null)
+            {
+                Cursor = Cursors.WaitCursor;
+                bo.Prex(files);
+                Cursor = Cursors.Arrow;
+            }
         }
     }
 }
