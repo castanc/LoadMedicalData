@@ -37,13 +37,11 @@ namespace LoadMedicalData
 
         private void btnBROUCesar_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.InitialDirectory = @"C:\Users\Cesar\Documents\Finanzas\Cesar";
-            ofd.Multiselect = true;
-            if ( ofd.ShowDialog() == DialogResult.OK)
+            var files = selectFiles(@"C:\Users\Cesar\Documents\Finanzas\Cesar");
+            if (files != null)
             {
                 Cursor = Cursors.WaitCursor;
-                bo.loadBrou("BROU CESAR", ofd.FileNames);
+                bo.loadBrou("BROU CESAR",files);
                 Cursor = Cursors.Arrow;
             }
         }
