@@ -1,4 +1,4 @@
-﻿namespace LoadMedicalData
+namespace LoadMedicalData
 {
     partial class Form1
     {
@@ -39,6 +39,7 @@
             this.cbmiDinero = new System.Windows.Forms.ComboBox();
             this.btnMiDinero = new System.Windows.Forms.Button();
             this.btnAnda = new System.Windows.Forms.Button();
+            this.bhtnPrex = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,7 +157,7 @@
             // 
             // btnAnda
             // 
-            this.btnAnda.Location = new System.Drawing.Point(240, 51);
+            this.btnAnda.Location = new System.Drawing.Point(139, 92);
             this.btnAnda.Name = "btnAnda";
             this.btnAnda.Size = new System.Drawing.Size(75, 23);
             this.btnAnda.TabIndex = 6;
@@ -164,11 +165,22 @@
             this.btnAnda.UseVisualStyleBackColor = true;
             this.btnAnda.Click += new System.EventHandler(this.btnAnda_Click);
             // 
+            // bhtnPrex
+            // 
+            this.bhtnPrex.Location = new System.Drawing.Point(139, 133);
+            this.bhtnPrex.Name = "bhtnPrex";
+            this.bhtnPrex.Size = new System.Drawing.Size(75, 23);
+            this.bhtnPrex.TabIndex = 7;
+            this.bhtnPrex.Text = "PREX";
+            this.bhtnPrex.UseVisualStyleBackColor = true;
+            this.bhtnPrex.Click += new System.EventHandler(this.bhtnPrex_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bhtnPrex);
             this.Controls.Add(this.btnAnda);
             this.Controls.Add(this.btnMiDinero);
             this.Controls.Add(this.cbmiDinero);
@@ -195,6 +207,7 @@
         private System.Windows.Forms.ComboBox cbmiDinero;
         private System.Windows.Forms.Button btnMiDinero;
         private System.Windows.Forms.Button btnAnda;
+        private System.Windows.Forms.Button bhtnPrex;
     }
 }
 
